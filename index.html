@@ -1,23 +1,803 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Welcome</title>
-    <link rel="stylesheet" href="css/mystyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="MaxGo app landing page: your ultimate platform to watch movies, series, anime and live TV from any device.">
+    <meta name="author" content="Yeremi T.">
+    <meta property="og:site_name" content="MaxGo" />
+    <meta property="og:site" content="https://maxgo.pro" />
+    <meta property="og:title" content="MaxGo - Movies, Series and Live TV from any location" />
+    <meta property="og:description" content="Discover MaxGo, the perfect app to watch movies, series, anime and live TV on any device." />
+    <meta property="og:image" content="https://maxgo.pro/assets/img/maxgo-preview.jpg" />
+    <meta property="og:url" content="https://maxgo.pro" />
+	<meta property="og:type" content="article" />
 
+    <title>MaxGo Application</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+    <link rel="icon" href="images/favicon.png">
 </head>
-<body>
-    <h1>Web Development Fundamentals</h1>
-    <p>Lorem ipsum, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <p>Lorem ipsum,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-    <ul class="navbar">
-    <li><a href="home.html">Home</a></li>
-    <li><a href="news.html">News</a></li>
-    <li><a href="photos.html">Photos</a></li>
-    </ul>    
-    <address>Sistemas - FIA</address>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>    
 
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a> 
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#features">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#preview">PREVIEW</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://x.com/"">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> 
+
+
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1>INTELLIGENT PLATFORM <br>FOR <span id="js-rotating">CINEMA, SERIES, LIVE TV</span></h1>
+                            <p class="p-large">Discover MaxGo: the modern and efficient solution for accessing all your favorite audiovisual content in one place, on any device.</p>
+                            <a class="btn-solid-lg page-scroll" href="https://www.apple.com/la/app-store/"><i class="fab fa-apple"></i>APP STORE</a>
+                            <a class="btn-solid-lg page-scroll" href="https://play.google.com/"><i class="fab fa-google-play"></i>PLAY STORE</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/header-iphone.png" alt="alternative">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>FEATURES</h2>
+                    <div class="p-heading p-large">MAXGO was designed with inspiration from media enthusiasts and content lovers to offer everything you need in one place</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-film"></i>MOVIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-video"></i>SERIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-broadcast-tower"></i>LIVE TV</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
+
+
+                <!-- Tabs Content-->
+                <div class="tab-content" id="lenoTabsContent">
+                    
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Entertainment Goals</h4>
+                                                <p>Choose your favorite genres and build your own cinematic universe with MAXGO</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="fas fa-film"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Visual Explorer</h4>
+                                                <p>Our intuitive interface helps you discover movies effortlessly and enjoy every visual detail</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="fas fa-eye"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Refined Options</h4>
+                                                <p>Smart filters and personalized recommendations to enhance your viewing experience</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="fas fa-sliders-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="images/features-iphone-1.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+                                
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card right-pane first">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Release Calendar</h4>
+                                                <p>Stay updated with upcoming movie releases and premieres using our built-in calendar feature</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-eye"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Immersive Viewing</h4>
+                                                <p>Enjoy a clean and distraction-free experience optimized for watching long movies and sagas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-video"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Cinematic Experience</h4>
+                                                <p>MAXGO delivers high-quality streaming to give you the best movie-watching foundation on any device</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="images/features-iphone-2.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+                                
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="text-area">
+                                        <h3>Progress Tracking</h3>
+                                        <p>Keep track of your watched episodes, seasons, and favorite series automatically — and update them anytime</p>
+                                    </div> <!-- end of text-area -->
+                                    
+                                    <div class="icon-cards-area">
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-list-alt"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Episode Tracking</h4>
+                                                    <p>Keep track of what you've watched, get alerts for new episodes, and continue right where you left off</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-folder-open"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Strong Content Library</h4>
+                                                    <p>Enjoy a constantly updated catalog of series from all genres and regions</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-bookmark"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Reading Mode</h4>
+                                                    <p>Explore synopses, cast info, and reviews distraction-free with our optimized reading mode</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-calendar-alt"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Release Calendar</h4>
+                                                    <p>Stay up to date with upcoming releases so you never miss a premiere</p>
+                                                </div>
+                                            </div>
+                                    </div> <!-- end of icon cards area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-map-signs"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Interactive Guide</h4>
+                                                <p>Browse the live programming schedule with our easy-to-use guide</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-signal"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Stable and Smooth Streaming</h4>
+                                                <p>Watch live channels in high quality with no interruptions</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Instant Favorites</h4>
+                                                <p>Save your favorite channels and access them instantly from any device</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-desktop"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Monitoring Tools</h4>
+                                                <p>View real-time stats of your activity and discover your viewing habits</p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of icon cards area -->
+                                    
+                                    <div class="text-area">
+                                        <h3>Viewing Insights</h3>
+                                        <p>Track your live TV activity with built-in monitoring tools. Get real-time stats and filter your viewing history by channel, genre, or time watched.</p>
+                                    </div> <!-- end of text-area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="images/features-iphone-3.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+                                    
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div><!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of row --> 
+        </div> <!-- end of container --> 
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+
+    <!-- Video -->
+    <div id="preview" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>PREVIEW</h2>
+                    <div class="p-heading p-large">Enjoy movies, series, and live TV like never before — powered by MAXGO’s advanced content discovery engine.</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" data-effect="fadeIn">
+                                <img class="img-fluid" src="images/video-frame.jpg" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of video -->
+
+
+    <!-- Details 1 -->
+    <div id="details" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/details-1-iphone.png" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>Watchlist Goals</h3>
+                        <p>Set your movie-watching goals — from genres to directors or franchises — and let MAXGO help you track your progress as you enjoy each title</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>Release Calendar</h3>
+                            <p>Use the built-in calendar to keep track of upcoming episodes, season premieres, and special events — so you never miss a moment</p>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/details-2-iphone.png" alt="alternative">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->    
+    <!-- end of details 2 -->
+
+
+    <!-- Details Lightboxes -->
+	<!-- Lightbox -->
+	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="images/details-lightbox-1.png" alt="alternative">
+			</div>
+			<div class="col-lg-6">
+				<h3>Set Your Watch Goals</h3>
+				<hr>
+                <p>Track your movie-watching journey by setting personal goals — from must-see classics to upcoming releases.</p>
+                <h4>User Feedback Driven</h4>
+                <p>MAXGO is built around real viewer experiences to make movie discovery fast, smooth, and enjoyable.</p>
+                <p>Forget endless searching — MAXGO helps you find and watch what you love, with features designed for convenience and productivity.</p>
+				<table>
+					<tr><td class="icon-cell"><i class="fas fa-laptop"></i></td><td>Responsive layout</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-bullseye"></i></td><td>Eye-Catching CTAs</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-images"></i></td><td>Image Gallery Slider</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Built-in Contact Forms</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-Structured Code</td></tr>
+				</table>
+				<a class="btn-solid-reg" href="https://github.com/Jeremias0618/test-page">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a> 
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    
+    <!-- Lightbox -->
+    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="images/details-lightbox-2.png" alt="alternative">
+			</div>
+			<div class="col-lg-6">
+				<h3>Episode Calendar</h3>
+				<hr>
+                <p>Use the integrated calendar to track upcoming episodes, new seasons, and release dates with ease.</p>
+                <h4>Viewer-Driven Features</h4>
+                <p>Designed with feedback from real users, MAXGO makes it simple to manage and enjoy your favorite series.</p>
+                <p>Save time and enhance your binge-watching routine with intuitive tools and a smart interface.</p>
+				<table>
+					<tr><td class="icon-cell"><i class="fas fa-laptop"></i></td><td>Responsive layout</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-bullseye"></i></td><td>Eye-Catching CTAs</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-images"></i></td><td>Image Gallery Slider</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Built-in Contact Forms</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-Structured Code</td></tr>
+				</table>
+				<a class="btn-solid-reg" href="https://github.com/Jeremias0618/test-page">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+
+    <!-- Screenshots -->
+    <div class="slider-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-1.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-1.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-2.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-2.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-3.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-3.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-4.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-4.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-5.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-5.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-6.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-6.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-7.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-7.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-8.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-8.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-9.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-9.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-10.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-10.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+                                
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-2 -->
+    <!-- end of screenshots -->
+
+
+    <!-- Download -->
+    <div class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2>Download <span class="blue">MAXGO</span></h2>
+                        <p class="p-large">Access movies, series and live TV with smart streaming technology designed to get you watching fast</p>
+                        <a class="btn-solid-lg" href="https://www.apple.com/la/app-store/"><i class="fab fa-apple"></i>APP STORE</a>
+                        <a class="btn-solid-lg" href="https://play.google.com/"><i class="fab fa-google-play"></i>PLAY STORE</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/download.png" alt="alternative">
+                    </div> <!-- end of img-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of download -->
+
+
+    <!-- Statistics -->
+    <div class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Counter -->
+                    <div id="counter">
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="341">1</div>
+                            <p class="counter-info">Happy Users</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="95">1</div>
+                            <p class="counter-info">Issues Solved</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="109">1</div>
+                            <p class="counter-info">Good Reviews</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="124">1</div>
+                            <p class="counter-info">Case Studies</p>
+                        </div>
+                    </div>
+                    <!-- end of counter -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of statistics -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>CONTACT</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address">Have questions or suggestions? We’re here to help. Use the contact form below or reach us directly</li>
+                        <li><i class="fas fa-map-marker-alt"></i>198 Streamline Ave, New York, NY 10001, US</li>
+                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">+1 555 432 8760</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:office@leno.com">support@maxgo.pro</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Your message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to MAXGO's Privacy Policy and Terms & Conditions</a> 
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>About MAXGO</h4>
+                        <p>We’re passionate about delivering the best entertainment experience, providing seamless streaming for movies, series, and live TV</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Our business partners <a class="turquoise" href="#">techguide.com</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Read our <a class="turquoise" href="#">Terms & Conditions</a>, <a class="turquoise" href="#">Privacy Policy</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack">
+                            <a href="https://github.com/Jeremias0618/test-page">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://github.com/Jeremias0618/test-page">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://github.com/Jeremias0618/test-page">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://github.com/Jeremias0618/test-page">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://github.com/Jeremias0618/test-page">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © MAXGO - Movie, Series & Live TV Streaming by <a href="https://github.com/Jeremias0618/test-page">Yeremi T</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>

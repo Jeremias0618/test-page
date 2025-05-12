@@ -74,7 +74,6 @@ Feel free to reach out:
 
 * 📫 Email: [support@maxgo.pro](mailto:support@maxgo.pro)
 * 🌐 Website: [https://maxgo.pro](https://maxgo.pro)
-* 🧠 Developer: **CyberCode Labs** | Perú
 
 ---
 
